@@ -3,6 +3,7 @@ import {createBottomTabNavigator} from 'react-navigation-tabs';
 import HomeScreen from '_scenes/home';
 import AboutScreen from '_scenes/about';
 import FlexScreen from '_scenes/flexPage';
+import FlatListScreen from '_scenes/flatList';
 
 const TabNavigatorConfig = {
   initialRouteName: 'Home',
@@ -19,6 +20,9 @@ const RouteConfigs = {
   },
   FlexPage: {
     screen: FlexScreen,
+  },
+  FlatList: {
+    screen: FlatListScreen,
   },
 };
 

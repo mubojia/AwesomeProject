@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
 import {Text, TextInput, View} from 'react-native';
 
@@ -6,7 +8,13 @@ export default function PizzaTranslator() {
   return (
     <View style={{padding: 10}}>
       <TextInput
-        style={{height: 40, backgroundColor: '#ccc', paddingLeft: 10}}
+        style={{
+          height: 40,
+          paddingLeft: 10,
+          borderWidth: 1,
+          borderColor: '#ccc',
+          borderRadius: 6,
+        }}
         placeholder="Type here to translate!"
         onChangeText={text => setText(text)}
         defaultValue={text}

@@ -2,6 +2,7 @@ import React from 'react';
 import {SafeAreaView, View, Text} from 'react-native';
 import ListName from '_components/demo1';
 import Blink from '_components/demo2';
+import FetchExample from '_components/demo8';
 
 const AboutScreen = () => (
   <SafeAreaView>
@@ -13,6 +14,7 @@ const AboutScreen = () => (
       <ListName num="4" name="hongQiGong" />
       <ListName num="5" name="ouYangFeng" />
     </View>
+    <FetchExample />
     <Blink text="11111111111" />
   </SafeAreaView>
 );
